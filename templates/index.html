@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='icons/favicon.ico')}}" type="image/x-icon">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+  <title>Nao | A friendly Chatbot</title> 
+</head>
+<body>
+  <header>
+    <p><strong>Nao</strong> | A chatbot created by Naomi Lago</p>
+  </header>
+  <div class="chat-container"></div>
+  <div class="prompt-container">
+    <input type="text" name="prompt" id="prompt" placeholder="Ask something...">
+    <img id="submit" src="{{ url_for('static', filename='icons/send.png') }}">
+  </div>
+</body>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</html>
